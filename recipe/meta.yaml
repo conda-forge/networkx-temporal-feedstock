@@ -1,5 +1,5 @@
 {% set name = "networkx-temporal" %}
-{% set version = "1.2" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/networkx_temporal-{{ version }}.tar.gz
-  sha256: e31ef408ebc0f3daae24151017e92568f80c692d6aab2cd20ba1242862b85623
+  sha256: 29fcef4d770322177ccb9052d32aa232131b6ffab707a288c28d45d643333325
 
 build:
   noarch: python

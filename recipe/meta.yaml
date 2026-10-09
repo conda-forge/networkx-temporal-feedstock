@@ -8,6 +8,9 @@ package:
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/networkx_temporal-{{ version }}.tar.gz
   sha256: 401130124551089f1f9bfedd1a841cfa9c41b54258c0403f8a3418927441896c
+  patches:
+    # upstream 1.4.4 has a stray `from turtle import pd`, which needs Tk/X11 at import time
+    - remove-turtle-import.patch
 
 build:
   noarch: python

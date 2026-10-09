@@ -1,0 +1,7 @@
+--- a/src/networkx_temporal/utils/convert/pandas.py
++++ b/src/networkx_temporal/utils/convert/pandas.py
+@@ -1,4 +1,3 @@
+-from turtle import pd
+ from typing import List, Optional, Union
+ 
+ import networkx as nx
